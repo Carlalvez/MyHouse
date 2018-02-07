@@ -51,6 +51,7 @@ public class Picture
         sun.moveVertical(-40);
         sun.changeSize(80);
         sun.makeVisible();
+        moveSun();
         
     }
 
@@ -89,16 +90,10 @@ public class Picture
      */
     public void moveSun()
     {
-        
+        if (wall != null)   // only if it's painted already...
         {
-        sun = new Circle();
-        sun.changeColor("yellow");
-        sun.moveHorizontal(100);
-        sun.moveVertical(-40);
-        sun.changeSize(80);
-        sun.makeVisible();
-        sun.slowMoveVertical (100);
-        sun.slowMoveVertical (20);
+            sun.slowMoveVertical (100);
+            sun.slowMoveVertical (20);
         }
     }
 }
