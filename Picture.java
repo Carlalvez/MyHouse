@@ -52,7 +52,6 @@ public class Picture
         sun.changeSize(80);
         sun.makeVisible();
         
-        
     }
 
     /**
@@ -82,6 +81,24 @@ public class Picture
             roof.changeColor("green");
             sun.changeColor("yellow");
             rectangle.changeColor("green");
+        }
+    }
+    
+    /**
+     * Método moveSun añadido
+     */
+    public void moveSun()
+    {
+        
+        {
+        sun = new Circle();
+        sun.changeColor("yellow");
+        sun.moveHorizontal(100);
+        sun.moveVertical(-40);
+        sun.changeSize(80);
+        sun.makeVisible();
+        sun.slowMoveVertical (100);
+        sun.slowMoveVertical (20);
         }
     }
 }
