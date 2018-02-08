@@ -22,8 +22,8 @@ public class Circle
     public Circle()
     {
         diameter = 68;
-        xPosition = 230;
-        yPosition = 90;
+        xPosition = 200;
+        yPosition = 40;
         color = "blue";
     }
 
